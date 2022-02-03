@@ -40,3 +40,9 @@
 - `MouseEvent.clientX/Y` - 보이는 뷰포트 기준 좌표
 - `MouseEvent.pageX/Y` - 스크롤로 숨겨진 부분을 포함한 전체 페이지 기준 좌표
 - `MouseEvent.screenX/Y` - 실제 화면 스크린 기준 좌표
+
+### Window Scroll
+
+- `Window.scrollBy()` - 주어진 값만큼 스크롤 이동
+- `Window.scrollTo()` - 주어진 좌표로 스크롤 이동
+- `Element.scrollIntoView()` - 호출된 요소가 사용자에게 표시되도록 스크롤 이동
