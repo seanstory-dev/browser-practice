@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        background-color: cornflowerblue;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        display: inline-block;
+        font-size: 2rem;
+      }
+      article {
+        font-size: 2rem;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Window Size</h1>
+      <p>브라우저 화면의 크기를 자유자재로 움직여보세요.</p>
+    </main>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sit! Quibusdam minima
+      dicta veritatis et numquam beatae inventore cupiditate illo, odio asperiores, saepe omnis modi
+      aliquid. Corrupti facere eveniet sequi.
+    </article>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sit! Quibusdam minima
+      dicta veritatis et numquam beatae inventore cupiditate illo, odio asperiores, saepe omnis modi
+      aliquid. Corrupti facere eveniet sequi.
+    </article>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sit! Quibusdam minima
+      dicta veritatis et numquam beatae inventore cupiditate illo, odio asperiores, saepe omnis modi
+      aliquid. Corrupti facere eveniet sequi.
+    </article>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sit! Quibusdam minima
+      dicta veritatis et numquam beatae inventore cupiditate illo, odio asperiores, saepe omnis modi
+      aliquid. Corrupti facere eveniet sequi.
+    </article>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sit! Quibusdam minima
+      dicta veritatis et numquam beatae inventore cupiditate illo, odio asperiores, saepe omnis modi
+      aliquid. Corrupti facere eveniet sequi.
+    </article>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sit! Quibusdam minima
+      dicta veritatis et numquam beatae inventore cupiditate illo, odio asperiores, saepe omnis modi
+      aliquid. Corrupti facere eveniet sequi.
+    </article>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sit! Quibusdam minima
+      dicta veritatis et numquam beatae inventore cupiditate illo, odio asperiores, saepe omnis modi
+      aliquid. Corrupti facere eveniet sequi.
+    </article>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sit! Quibusdam minima
+      dicta veritatis et numquam beatae inventore cupiditate illo, odio asperiores, saepe omnis modi
+      aliquid. Corrupti facere eveniet sequi.
+    </article>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sit! Quibusdam minima
+      dicta veritatis et numquam beatae inventore cupiditate illo, odio asperiores, saepe omnis modi
+      aliquid. Corrupti facere eveniet sequi.
+    </article>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sit! Quibusdam minima
+      dicta veritatis et numquam beatae inventore cupiditate illo, odio asperiores, saepe omnis modi
+      aliquid. Corrupti facere eveniet sequi.
+    </article>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sit! Quibusdam minima
+      dicta veritatis et numquam beatae inventore cupiditate illo, odio asperiores, saepe omnis modi
+      aliquid. Corrupti facere eveniet sequi.
+    </article>
+    <script>
+      const main = document.querySelector('main');
+
+      function updateText() {
+        main.innerHTML = `
+         window.screen: ${window.screen.width}, ${window.screen.height} <br/>
+         window.outer: ${window.outerWidth}, ${window.outerHeight} <br/>
+         window.inner: ${window.innerWidth}, ${window.innerHeight} <br/>
+         document.documentElement.client: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}
+        `;
+      }
+      window.addEventListener('resize', () => {
+        updateText();
+      });
+    </script>
+  </body>
+</html>

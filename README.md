@@ -7,7 +7,7 @@
 - 브라우저에서 제공하는 APIs
 - 몇몇 Web APIs는 보안 처리가 되어 있는 HTTPS 환경에서만 동작한다.
 
-### Window 전역 객체
+## Window 전역 객체
 
 브라우저 전체 창
 
@@ -24,3 +24,10 @@
   - Date
 
 **-> 개발자도구 콘솔에 window 객체를 찍어보자.**
+
+### Window Size
+
+- `window.screen.width/height` - 스크린 크기
+- `window.outerWidth/Height` - 브라우저 창 크기
+- `window.innerWidth/Height` - 뷰포트 크기(스크롤바 표시 영역 포함)
+- `document.documentElement.clientWidth/Height` - 뷰포트 크기(스크롤바 표시 영역 제외)
