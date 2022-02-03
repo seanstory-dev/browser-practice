@@ -31,3 +31,12 @@
 - `window.outerWidth/Height` - 브라우저 창 크기
 - `window.innerWidth/Height` - 뷰포트 크기(스크롤바 표시 영역 포함)
 - `document.documentElement.clientWidth/Height` - 뷰포트 크기(스크롤바 표시 영역 제외)
+
+### Window Coordinates
+
+- 브라우저 좌표는 뷰포트 좌측 상단에서부터 시작한다.
+- `Element.getBoundingClientRect()` - 요소의 크기나 위치 정보
+- `MouseEvent.offsetX/Y` - 이벤트가 걸려있는 DOM 노드를 기준 좌표
+- `MouseEvent.clientX/Y` - 보이는 뷰포트 기준 좌표
+- `MouseEvent.pageX/Y` - 스크롤로 숨겨진 부분을 포함한 전체 페이지 기준 좌표
+- `MouseEvent.screenX/Y` - 실제 화면 스크린 기준 좌표
