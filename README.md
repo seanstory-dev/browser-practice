@@ -46,3 +46,11 @@
 - `Window.scrollBy()` - 주어진 값만큼 스크롤 이동
 - `Window.scrollTo()` - 주어진 좌표로 스크롤 이동
 - `Element.scrollIntoView()` - 호출된 요소가 사용자에게 표시되도록 스크롤 이동
+
+### Window Load
+
+- `DOMContentLoaded` - HTML 파일만 로드가 완료되면 호출된다.
+- `load` - HTML 파일로부터 파생된 모든 리소스들이 로딩이 완료되면 호출된다.
+- `beforeunload` - 사용자가 페이지를 나가기 전에 호출된다.
+- `unload` - 리소스들이 모두 언로드가 완료되면 호출된다.
+- defer 옵션을 사용하면 DOMContentLoaded 시점 즈음에 서로 비슷하게 발생되기 때문에 효율적이다.
