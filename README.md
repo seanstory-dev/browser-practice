@@ -57,13 +57,38 @@
 
 ## DOM
 
-브라우저는 HTML 태그를 자바스크립트의 Node 객체로 변환한다.
-최종적으로 HTML 문서는 DOM Tree가 된다.
-
+- 브라우저는 HTML 태그를 자바스크립트의 Node 객체로 변환한다.
+- 최종적으로 HTML 문서는 DOM Tree가 된다.
 - Node 인터페이스는 EventTarget 인터페이스를 상속한다.
 - Document, Element 인터페이스는 Node 인터페이스를 상속한다.
+- Document, Element는 결국 Node이고, Node는 결국 EventTarget이다.
 
-Document, Element는 결국 Node이고, Node는 결국 EventTarget이다.
+### CSSOM
 
+DOM + CSS
 
+- 모든 CSS 스타일이 Cascading 룰에 따라서 합해진 계산된 스타일(Computed Style)이 등록된다.
+- DOM과 CSSOM 트리를 합해서 사용자에게 궁극적으로 보여지는 아이들만 가지고 Render Tree를 생성한다.
 
+## Critical Rendering Path
+
+### Construction
+
+트리가 작으면 작을수록 성능이 좋기 때문에 최대한 요소들을 작게 만드는 것이 중요하다.
+
+1. request/response -> HTML
+2. loading
+3. scripting -> DOM, CSSOM
+4. rendering -> Render Tree
+
+### Operation
+
+최대한 composition만 일어나도록 한다. paint, layout이 발생하지 않도록 한다.
+
+5. layout -> 크기, 모양, 위치 계산
+6. paint -> 성능을 위해 레이어별로 준비(will-change)
+7. composition -> 레이어를 차곡차곡 쌓기
+
+> 개발자 도구에서 `More tools - Layers`에서 확인 가능
+
+💎 Tip. [CSS 속성값이 성능에 어떤 영향을 주는지 알려주는 사이트](https://csstriggers.com/)
