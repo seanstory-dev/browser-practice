@@ -54,3 +54,16 @@
 - `beforeunload` - 사용자가 페이지를 나가기 전에 호출된다.
 - `unload` - 리소스들이 모두 언로드가 완료되면 호출된다.
 - defer 옵션을 사용하면 DOMContentLoaded 시점 즈음에 서로 비슷하게 발생되기 때문에 효율적이다.
+
+## DOM
+
+브라우저는 HTML 태그를 자바스크립트의 Node 객체로 변환한다.
+최종적으로 HTML 문서는 DOM Tree가 된다.
+
+- Node 인터페이스는 EventTarget 인터페이스를 상속한다.
+- Document, Element 인터페이스는 Node 인터페이스를 상속한다.
+
+Document, Element는 결국 Node이고, Node는 결국 EventTarget이다.
+
+
+
